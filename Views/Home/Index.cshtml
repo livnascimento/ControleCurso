@@ -1,8 +1,31 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Minha Escola";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="card-group">
+        <a asp-area="" asp-controller="Aluno" asp-action="Index" style="text-decoration: none;">
+            <div class="card text-bg-success text-center mb-3 mx-2">
+                <div class="card-header">
+                    <i class="bi bi-person-square fs-2"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Adicionar</h5>
+                    <p class="card-text">aluno</p>
+                </div>
+            </div>
+        </a>
+        
+        <a asp-area="" asp-controller="Aluno" asp-action="Index" style="text-decoration: none;">
+            <div class="card text-bg-success text-center mb-3 mx-2">
+                <div class="card-header">
+                    <i class="bi bi-mortarboard-fill fs-2"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Adicionar</h5>
+                    <p class="card-text">curso</p>
+                </div>
+            </div>
+        </a>
+    </div>
 </div>
